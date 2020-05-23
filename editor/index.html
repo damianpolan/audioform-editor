@@ -512,20 +512,20 @@
 
 <div id="tools_left" class="tools_panel">
   <div class="tool_button" id="tool_select" title="Select Tool [V]"></div>
-  <div class="tool_button" id="tool_fhpath" title="Pencil Tool [P]"></div>
+  <!-- <div class="tool_button" id="tool_fhpath" title="Pencil Tool [P]"></div> -->
   <div class="tool_button" id="tool_line" title="Line Tool [L]"></div>
-  <div class="tool_button" id="tool_rect" title="Square/Rect Tool [R]"></div>
+  <!-- <div class="tool_button" id="tool_rect" title="Square/Rect Tool [R]"></div> -->
   <div class="tool_button" id="tool_ellipse" title="Ellipse/Circle Tool [C]"></div>
-  <div class="tool_button" id="tool_path" title="Path Tool [P]"></div>
+<!--   <div class="tool_button" id="tool_path" title="Path Tool [P]"></div>
   <div class="tool_button" id="tool_text" title="Text Tool [T]"></div>
-  <div class="tool_button" id="tool_zoom" title="Zoom Tool [Z]"></div>
+  <div class="tool_button" id="tool_zoom" title="Zoom Tool [Z]"></div> -->
   
-  <div id="color_tools">
+  <div id="color_tools" hidden>
         <div id="tool_switch" title="Switch stroke and fill colors [X]"></div>
         <div class="color_tool active" id="tool_fill">
           <label class="icon_label" title="Change fill color"></label>
           <div class="color_block">
-            <div id="fill_bg"></div>
+            <div id="fill_bg" style="display: false"></div>
             <div id="fill_color" class="color_block"></div>
           </div>
         </div>

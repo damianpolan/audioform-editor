@@ -24,7 +24,7 @@
     var is_ready = false;
     var curConfig = {
       canvas_expansion: 1, 
-      dimensions: [580,400], 
+      dimensions: [1000,1000], 
       initFill: {color: 'fff', opacity: 1},
       initStroke: {width: 1.5, color: '000', opacity: 1},
       initOpacity: 1,
@@ -697,6 +697,8 @@
           var timer;
           
           var pos = $(show_sel).position();
+          debugger;
+
           $(hold_sel).css({'left': pos.left+34, 'top': pos.top+77});
           
           // Clicking the "show" icon should set the current mode
@@ -1095,7 +1097,9 @@
                 }
               });
             }
-            setupFlyouts(holders);
+           // Comment this out or else the left panel UI items dissapear
+           // when remove unused items
+           // setupFlyouts(holders); 
           });
           
           $.each(btn_selects, function() {
@@ -3265,7 +3269,9 @@
             });
             
             // Setup flyouts
-            setupFlyouts(flyouts);
+            // Comment this out or else the left panel UI items dissapear
+            // when remove unused items
+            //setupFlyouts(flyouts);
             
             $(window).bind('keydown', 'tab', function(e) {
               if(ui_context === 'canvas') {
